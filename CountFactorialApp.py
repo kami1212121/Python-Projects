@@ -5,6 +5,7 @@ def silnia(x):
     else:
         return x * silnia(x-1)
 print(silnia(5))
+
 #2 Sposób
 def silnia(x):
     if x <= 1:
@@ -15,3 +16,8 @@ def silnia(x):
             wynik *= i
         return wynik
 print(silnia(5))
+
+#3 Sposób
+from math import factorial
+silnia=input("Podaj liczbę z której chcesz wyliczyć silnie: ")
+print(factorial(int(silnia)))
